@@ -1,0 +1,38 @@
+﻿
+      input.$.invalid.$.pristine{border:1px solid red;}
+
+ 
+ form, select {
+    width: 400px;
+    padding: 60px 30px ;
+    background-color: #eee;    
+    line-height: 1px; 
+    position:relative;    
+    vertical-align:middle;
+    font-size: 90%;
+    font-style:normal;    
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    
+  }  
+
+  label {
+      padding-bottom: 4px; 
+      }
+
+
+  body {
+    background-image: url("1.jpg"); #CCC no-repeat left top;
+     padding: 0;
+  }
+
+button {
+  position: relative;
+  top: 10px;
+  left: 120px;
+}
+

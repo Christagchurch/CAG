@@ -1,0 +1,69 @@
+﻿.panel-body {
+    padding: 5px;
+    text-align: center;
+    background-color: none;
+    border: solid 1px;
+}
+
+ .panel-body {
+    padding: 50px;
+   
+}
+
+ #panel-heading {
+     cursor: pointer;
+     padding: 1.2em;
+     font-family: 'Times New Roman', Times, serif;
+     
+     
+ }
+
+ h1.panel-title {
+    font-size: 10px;
+}
+
+ .panel-default {
+    border-style: solid;
+    border-color: silver;
+}
+   
+ .glyphicon.glyphicon-calendar {
+    font-size: 40px;
+}
+
+  .container-events {  
+    position: relative;
+    width: 600px;
+    padding: 5px;
+    border: 3px solid gray;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+
+
+/*.item-date{
+    margin: 0 auto; 
+    padding:3px 0 0 0px; 
+    height: 37px; 
+    width: 30px; 
+    color: white; 
+    float: left; 
+    font-weight: bold; 
+    text-align: center;
+    font-size:11px;
+}
+
+.item-date-day{
+    font-size: 13px; 
+    text-align: center;
+}
+
+
+.item-header-red{
+    padding: 9px 0 0 12px; 
+    background-image: url(/Images/EventsDateBg.jpg); 
+    width: 53px; 
+    height: 53px;}*/

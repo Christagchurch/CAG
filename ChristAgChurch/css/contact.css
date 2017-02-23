@@ -1,0 +1,42 @@
+﻿ form{
+    max-width: 700px;    
+    background-color: #eee;    
+    line-height: 1px; 
+    position:relative;    
+    vertical-align:middle;
+    font-size: 90%;
+    font-style:normal;    
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-top: 10em;
+    padding-bottom: 3em;  
+    /*margin-right: 18em;*/    
+  }  
+
+
+
+  label {
+      padding-bottom: 4px; 
+
+      }
+
+
+  body { 
+     padding: 50px;
+     font-family:'Times New Roman', Times, serif Arial;
+     background: #52527a;
+  }
+
+button {
+  position: relative;
+  top: 10px;
+  left: 120px;
+}
+
+.contactRow {
+ justify-content:center;
+
+  margin-right: 1em;
+ 
+}

@@ -1,0 +1,79 @@
+﻿  .formCreateEvent {
+ margin-left:auto;
+  margin-right:auto;
+  margin-top: 75px;
+  max-width: 30%;
+  background: #eee;
+  padding: 20px 20px 20px 20px;
+  font: 12pt Arial, Helvetica, sans-serif;
+  color: #666;
+  padding-bottom: 1em;
+  margin-left:34em;   
+  }  
+
+  label {
+   display: block;
+  margin: 0px 0px 5px;
+      }
+
+ input[type="text"],  input[type="date"] {
+    color: #888;
+    width:90%;
+    height:auto;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    font: 200 12pt/25pt Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height: 15px;
+    margin: 2px 6px 16px 0px;
+}
+
+ textarea{
+  color: #888;
+  height:100px;
+  padding: 5px 0px 0px 5px;
+  width:  90%;
+  border: 1px solid #C5E2FF;
+  background: #FBFBFB;
+  outline: 0;
+  -webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+  box-shadow: inset 0px 1px 6px #ECF3F5;
+  font: 200 12px/25px Arial, Helvetica, sans-serif;
+  line-height:15px;
+  margin: 2px 6px 16px 0px;
+}
+
+
+
+button {
+  position: relative;
+  top: 10px;
+  left: 150px;
+}
+
+#hour {
+    
+    color: #000;
+    font-size: 12px;
+    background: transparent;
+    -webkit-appearance: none;
+
+}
+
+select-field1 {
+    background-color: #82caff;
+    color: #ffffff;
+} 
+
+#startTime {
+    max-width:680px;
+}
+
+.createEventRow{
+    background:#9ea6b2;
+    padding-top: 5em;
+}

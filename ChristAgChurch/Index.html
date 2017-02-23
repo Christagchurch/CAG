@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="CagApp">
+<head>
+    <title>Christ Assembly Of God</title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="App.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <!--<link href="css/register.css" rel="stylesheet" />-->
+    <link href="css/Events.css" rel="stylesheet" />
+    <link href="css/Create-Event.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!--for logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Logo</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <nav class="nav navbar-nav navbar-left">
+                    
+                        <li class="active"><a href="#Home">Home</a></li>
+                        <li><a href="#Events">Events</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Ministries">Ministries</a></li>                       
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Leadership">Leadership</a></li>
+                        <!--<li><a href="#sampleTest">Sample-test</a></li>-->
+                    
+                </nav>
+                <nav class="nav navbar-nav navbar-right">
+                    <li><a href="#Register">Register</a></li>
+                    <li><a href="#Login">Login</a></li>
+                    <li><a href="#createEvent">Create-Events</a></li>
+
+                </nav>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div ng-view>
+
+    </div>
+
+    <!--<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>-->
+    
+</body>
+</html>

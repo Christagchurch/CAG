@@ -1,0 +1,108 @@
+﻿
+  
+
+ 
+ input.$.invalid.$.pristine{border:1px solid red;}
+
+
+    .userRegisteration {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        background: #555;
+        padding: 20px 50px 20px 30px;
+        font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #D3D3D3;
+        text-shadow: 1px 1px 1px #444;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        margin-top: 12em;
+    }
+
+        .userRegisteration h1 {
+            padding: 0px 10px 10px 40px;
+            display: block;
+            border-bottom: 1px solid #444;
+            margin: -10px -30px 30px -30px;
+        }
+
+            .userRegisteration h1 > span {
+                display: block;
+                font-size: 11px;
+            }
+
+        .userRegisteration label {
+            display: block;
+            margin: 0px 0px 5px;
+        }
+
+            .userRegisteration label > span {
+                float: left;
+                width: 30%;
+                text-align: right;
+                padding-right: 10px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+        .userRegisteration input[type="text"], .userRegisteration input[type="email"], .userRegisteration input[type="password"], .userRegisteration input[type="contactNumber"] {
+            border: none;
+            color: #525252;
+            height: 25px;
+            line-height: 15px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            outline: 0 none;
+            padding: 5px 0px 5px 5px;
+            width: 70%;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            background: #DFDFDF;
+        }
+
+        .userRegisteration .form-group .feMaleRadio {
+            margin-left: 11.5em;
+        }
+
+
+        .userRegisteration select {
+            background: #DFDFDF url('down-arrow.png') no-repeat right;
+            background: #DFDFDF url('down-arrow.png') no-repeat right;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 0.01px;
+            text-overflow: '';
+            width: 70%;
+            height: 35px;
+            color: #525252;
+            line-height: 25px;
+        }
+
+
+        .userRegisteration .btn-primary {
+            background: #FFCC02;
+            margin-left: -9em;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            color: #585858;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            text-shadow: 1px 1px 1px #FFE477;
+            font-weight: bold;
+            box-shadow: 1px 1px 1px #3D3D3D;
+            -webkit-box-shadow: 1px 1px 1px #3D3D3D;
+            -moz-box-shadow: 1px 1px 1px #3D3D3D;
+        }
+
+            .userRegisteration .btn-primary:hover {
+                color: #333;
+                background-color: #EBEBEB;
+                cursor: pointer;
+            }

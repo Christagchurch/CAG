@@ -1,0 +1,162 @@
+﻿  .hovereffect {
+        padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: 70%;
+          position: relative; 
+    }
+
+      .hovereffect1 {
+        padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: 15%;
+          position: relative; 
+    }
+
+        .hovereffect2 {
+        padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: -40%;
+          position: relative; 
+    }
+
+         .hovereffect3 {
+           padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: 70%;
+          position: relative; 
+    }
+
+          .hovereffect4 {
+       padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: 15%;
+          position: relative; 
+    }
+
+           .hovereffect5 {
+           padding-top: 2em;
+        /*margin-left: 2em;*/
+        /*margin-right: 2em;*/
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        float:left;
+        padding: -10em;
+         right: -40%;
+          position: relative;
+    }
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    .hovereffect, .hovereffect1, .hovereffect2 {
+        height: 25em;
+        width: 25em;
+    }
+
+    .hovereffect3, .hovereffect4, .hovereffect5 {
+        height: 25em;
+        width: 25em;
+    }
+
+
+
+    .overlayinn {
+        background-color: rgba(140, 140, 140, 0.4);
+        height: 66.5%;
+        width: 100%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        bottom: 2px;
+        position: absolute;
+        transition: opacity .5s;
+        margin-top: 19.3%;
+    }
+
+        .overlayinn:hover {
+            opacity: 30;
+            transition: opacity .5s;
+            margin-top: 19.3%;
+        }
+
+    .hovereffect3 {
+      
+    }
+
+    body {
+        background: #666666;
+    }
+
+    .hovereffect > .img-responsive,
+    .hovereffect1 > .img-responsive, 
+    .hovereffect2 > .img-responsive, 
+    .hovereffect3 > .img-responsive, 
+    .hovereffect4 > .img-responsive,
+    .hovereffect5 > .img-responsive {
+        border: 4px solid #fff;
+        border-color: blanchedalmond;
+    }
+
+    h2, p, a {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white
+    }
+
+    h4 {
+            text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black
+    }
+
+
+    /*.hovereffect > .overlayinn > .info {
+        text-align: center;
+    }*/
+
+    .header {
+        padding-top: 2.5em;
+        font-size: 3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 20%;
+        margin-top: 2em;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

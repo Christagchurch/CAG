@@ -1,0 +1,104 @@
+﻿
+<script>
+
+    $(document).ready(function () {
+        $("#flip").on('click hover', function () {
+            $("#panel").slideToggle("slow");
+        });
+        $("#flip1").on('click hover', function () {
+            $("#panel1").slideToggle("slow");
+        });
+        $("#flip2").on('click hover', function () {
+            $("#panel2").slideToggle("slow");
+        });
+        $("#flip3").on('click hover', function () {
+            $("#panel3").slideToggle("slow");
+        });
+    });
+</script>
+
+<style>
+    #panel, #panel1, #panel2, #panel3 {
+        padding: 5px;
+        text-align: center;
+        background-color: #e6e6e6;
+        border: solid 1px #c3c3c3;
+        cursor: pointer;
+        word-wrap:break-word;
+        overflow-y: scroll;
+        height: 20em;
+    }
+
+    #flip, #flip1, #flip2, #flip3 {
+        padding: 5px;
+        text-align: center;
+        background-color: #e6e6e6;
+        border: solid 1px #c3c3c3;
+        cursor: pointer;
+        color: black;
+        margin-top: -5em;
+        height: 10em;
+       
+       
+    }
+
+    #panel, #panel1, #panel2, #panel3 {
+        padding: 50px;
+        display: none;
+    }
+
+    .sampleTest {
+        margin-top: 12em;
+    }
+
+        .sampleTest img {
+            border-radius: 90%;
+        }
+
+    body {
+        background-color: #b366ff;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12, col-xs-12, col-md-3, col-lg-3">
+                <div class="sampleTest">
+                    <img src="images/p1.jpg" height="200" width="260" />   </div>
+                    <div id="flip"> <br /> <br /> <br /> <br /> <b> Anesh D kurian </b> <br /> <p> Founder & Senior pastor</p></div>
+                    <div id="panel">Hello world!</div>                
+            </div>
+
+
+            <div class="col-sm-12, col-xs-12, col-md-3, col-lg-3">
+                <div class="sampleTest">
+                    <img src="images/p2.jpg" height="200" width="260" />  </div>
+                    <div id="flip1"> <br /> <br /> <br /> <br /> <b> Robin Frank </b> <br /> <p> Worship pastor</p></div>
+                    <div id="panel1">Hello world!</div>
+                
+            </div>
+
+
+            <div class="col-sm-12, col-xs-12, col-md-3, col-lg-3">
+                <div class="sampleTest"><img src="images/p3.jpg" height="200" width="260" /></div>
+                <div id="flip2"> <br /> <br /> <br /> <br /> <b> Rebakka Ruby </b> <br /> <p> Associate pastor</p> </div>
+                <div id="panel2">Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                      Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                    Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                    Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                    Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                    Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                    Hello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyzHello worldAbcdefghijklmnopqrstuvwxyz
+                !</div>
+            </div>
+
+            <div class="col-sm-12, col-xs-12, col-md-3, col-lg-3">
+                <div class="sampleTest"><img src="images/p4.jpg" height="200" width="260" />  </div>
+                <div id="flip3"> <br /> <br /> <br /> <br /> <b>David </b> <br /> <p> Associate pastor</p></div>
+                <div id="panel3">Hello world!</div>
+            </div>
+        </div>
+    </div>
+</body>
+

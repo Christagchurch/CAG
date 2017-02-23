@@ -1,0 +1,9 @@
+﻿/*.container-fluid, .map, #fordsMap {
+    width: 100%;
+    height: 90%;
+  }*/
+
+.container-fluid, .fords, #fmap, .brooklyn, #bmap, .cherryhill, #cmap {
+        width: 80%;
+        height: 75%;
+    }

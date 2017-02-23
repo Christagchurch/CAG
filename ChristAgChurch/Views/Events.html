@@ -1,0 +1,64 @@
+﻿
+    <div class="container-events">
+        <h3 style="text-align: center;"> <b>Events </b></h3>
+        <div row>
+            <div class="col-sm-offset-2">
+
+                <div ng-repeat="event in events">
+                    <div ng-click="showDetails = ! showDetails">
+                        <div class="panel panel-default" style="width: 90%;">
+                            <div class="panel-heading" id="panel-heading" style="text-align: center;">
+
+                                <div class="bckImg">
+                                    <img src="../Images/panel.jpg" alt="text" class="center-block">
+
+                                    <div class="caption pre-content center-block" style="color:aliceblue;">
+                                        <p class="center-block"> {{event.StartDate | date: "MMM"}}  </p>
+                                    </div>
+
+                                    <div class="caption post-content center-block" style="color:aliceblue;">
+                                        <p class="center-block"> {{event.StartDate | date: "dd"}}  </p>
+                                    </div>
+                                </div>
+
+                                <!--<h3 style="text-align: left;"> </h3>-->
+
+                                <h6 class="panel-title">
+                                    <strong>Title:</strong>{{event.Title}}  <br />
+                                    
+                                    <strong><span ng-show="event.ShowBothDates"> Dates: </span> </strong>
+                                    <span ng-show="event.ShowBothDates"> {{event.StartDate | date: "MMM dd"}} - {{event.EndDate | date: "MMM dd"}} <br /> </span> 
+
+
+                                    <strong>Timings:</strong> {{ event.StartTime }} - {{event.EndTime}}
+                                    <br/>                                   
+                                    <strong>Location:</strong>{{event.Location}} <br />
+                                    <strong><span ng-show="event.AdditionalTopic1"> {{event.AdditionalTopic1}}: </span> </strong> 
+                                    <span ng-show="event.AdditionalDescription1"> {{event.AdditionalDescription1}} </span>
+                                     <br />
+
+                                    <strong><span ng-show="event.AdditionalTopic2"> {{event.AdditionalTopic2}}: </span> </strong>
+                                    <span ng-show="event.AdditionalDescription2"> {{event.AdditionalDescription2}} </span>
+                                    <br />
+                                </h6>
+
+                            </div>
+                            <div ng-show="showDetails">
+                                <div class="panel-body">
+                                    <p> <strong>Event-Description: </strong> {{event.Description}}</p> <br />
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<span class="pull-left glyphicon glyphicon-calendar clickable_space" data-toggle="collapse" data-parent="#the_items" data-target="#n_1">-->
+    <!--<img src="../Images/panel.jpg" alt="text" class="center-block">-->
+
+
+ <!--{{event.StartTime }}  {{events.EndTime}} <br />-->
+<!--<p ng-bind-template="{{ event.StartTime }} + {{events.EndTime}}"> </p>--> 

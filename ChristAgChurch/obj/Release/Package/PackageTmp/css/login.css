@@ -1,0 +1,47 @@
+﻿
+   input.$.invalid.$.pristine{border:1px solid red;}  
+     
+
+ form, select {
+    width: 400px;
+    padding: 60px 30px ;
+    background-color: #eee;
+   
+    
+    /*margin: 50 auto;*/
+    line-height: 1px; 
+    position:relative;
+    /*text-align:center;*/
+    /*white-space:nowrap;*/
+    vertical-align:middle;
+    font-size: 90%;
+    font-style:normal;
+    /*font-family:sans-serif;*/
+    /*-webkit-text-size-adjust:100%;*/
+    /*-ms-text-size-adjust:100%*/
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-top: 200px;
+    padding-bottom:  0px 1px;
+    margin-bottom: -3px;
+    
+  }  
+
+  body {
+    background-image: url("../Images/1.jpg"); #CCC no-repeat left top;
+     padding: 0;
+  }
+
+  label {
+      padding-bottom: 4px; 
+      }
+
+ 
+
+  button {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  } 
+

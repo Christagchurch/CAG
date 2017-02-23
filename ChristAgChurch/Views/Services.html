@@ -1,0 +1,182 @@
+﻿
+<!DOCTYPE html>
+<style>
+    .fordsText {
+        margin-top: 3em;
+        margin-left: 9em;
+        font-family: Franklin Gothic;
+    }
+
+    .brooklynText, .cherryHillText {
+        margin-top: 3em;
+        margin-left: 9em;
+        font-family: Franklin Gothic;
+    }
+
+    .brooklynMap, .cherryHillMap {
+        margin-right: 10em;
+        margin-top: 3em;
+        /*border-style: solid;
+         border-width: 5px;
+         border-color: royalblue;*/
+    }
+
+    .fordsMap {
+        margin-right: 10em;
+        margin-top: 3em;
+        /*border-style: solid;
+         border-width: 5px;
+         border-color: royalblue;*/
+    }
+
+    h2 {
+        margin-left: 16em;
+        margin-top: 5em;
+        font-variant: small-caps;
+        font-weight: normal;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #9299a3;
+        margin: 0;
+        padding: 0;
+    }
+
+  
+
+    .fordsChurchContainer, .brooklynChurchContainer, .cherryhillChurchContainer {
+        border-bottom: 6px solid #ffff80;
+        background-color: #b3daff;
+   
+    }
+
+    h3, h5 {
+          font-family: Franklin Gothic;
+    }
+
+</style>
+
+<html>
+  <body>
+
+
+
+
+
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-12">
+            <h2><b>Worship-Services</b></h2>
+
+            <div class="row parentChurch fordsChurchContainer" style="width:85em;">
+                <div class="col-sm-6, fordsText" style="float: left; text-align: left;">
+                    <h3><b> CAG-Fords  </b></h3>
+                    <h5><b>Address:</b></h5>
+                    <p>111 Hammilton Ave, <br /> Fords, NewJersey(Nj)-07008</p>
+                    <h5><b>Service-timings: </b> Every sunday 10:30am-1:00pm </h5>
+                    <a href="#Home">Read-more</a>  <br />
+                </div>
+
+                <div class="col-sm-6, fordsMap" style="float: right; text-align: center;">
+                    <div id="fmap" style="width:40em; height: 15em;"> </div> <br /> <br />
+                </div>
+            </div>
+
+            <div class="row childChurch1 brooklynChurchContainer" style="width:85em;">
+                <div class="col-sm-6, brooklynText" style="float: left; text-align: left;">
+                    <h3><b> CAG-Brooklyn  </b></h3>
+                    <h5><b>Address:</b></h5>
+                    <p>4609, 8th avenue, <br /> Brooklyn, NewYork(Ny)-11220</p>
+                    <h5><b>Service-timings: </b>  Every saturday 05:30pm-9:30pm </h5>
+                    <a href="#Home">Read-more</a>  <br />
+                </div>
+
+                <div class="col-sm-6, brooklynMap" style="float: right; text-align: right;">
+                    <div id="bmap" style="width:40em; height: 15em;"> </div>  <br /> <br />
+                </div>
+            </div>
+
+            <div class="row childChurch2 cherryhillChurchContainer" style="width:85em;">
+                <div class="col-sm-6, cherryHillText" style="float: left; text-align: left;">
+                    <h3><b> CAG-Cherryhill  </b></h3>
+                    <h5><b>Address:</b></h5>
+                    <p>1989 Marlton pike(Rt.70 east), <br /> Cherry hill, NewJersey(Nj)-08003</p>
+                    <h5><b>Service-timings: </b>  Every sunday 6:30pm-8:30pm </h5>
+                    <a href="">Read-more</a>  <br />
+                </div>
+
+                <div class="col-sm-6, cherryHillMap" style="float: right; text-align: right;">
+                    <div id="cmap" style="width:40em; height: 15em;"> </div>  <br /> <br />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <script>
+        function initialize() {
+            var latlng = new google.maps.LatLng(40.529003, -74.310756);
+            var latlng2 = new google.maps.LatLng(40.642993, - 74.001361);
+            var latlng3 = new google.maps.LatLng(39.898228, -74.955822);
+            var myOptions =
+            {
+                zoom: 15,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var myOptions2 =
+            {
+                zoom: 15,
+                center: latlng2,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var myOptions3 =
+            {
+                zoom: 15,
+                center: latlng3,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("fmap"), myOptions);
+
+            var map2 = new google.maps.Map(document.getElementById("bmap"), myOptions2);
+
+            var map3 = new google.maps.Map(document.getElementById("cmap"), myOptions3);
+
+            var myMarker = new google.maps.Marker(
+            {
+                position: latlng,
+                map: map,
+                title: "Pune"
+            });
+
+            var myMarker2 = new google.maps.Marker(
+            {
+                position: latlng2,
+                map: map2,
+                title: "Noida"
+            });
+
+            var myMarker3 = new google.maps.Marker(
+            {
+                position: latlng3,
+                map: map3,
+                title: "Nadida"
+            });
+        }
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRJFztMjQCeeP3-1q98eE0GYqgwjC5ks8&callback=initialize">
+    </script>
+
+  </body>
+</html>

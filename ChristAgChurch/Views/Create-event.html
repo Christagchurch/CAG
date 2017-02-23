@@ -1,0 +1,86 @@
+﻿<div class="createEventRow">
+    <div>
+        <form name="createEvent" class="formCreateEvent" style="text-align: left;" ng-submit="submitForm()" novalidate>
+            <legend style="text-align:center"><b><u>Create-Event</u></b></legend>
+
+            <label>Title</label>
+            <input type="text" name="Title" ng-model="user.Title" required />
+            <div class="create-event" ng-show="createEvent.Title.$invalid && !createEvent.Title.$pristine">
+                <div ng-message="required">This field is required</div>
+            </div>
+            <br />
+
+            <label>StartDate:</label>
+            <input type="date" name="StartDate" ng-model="user.StartDate" placeholder="yyyy-MM-dd" min="{{currentDate | date: 'yyyy-MM-dd'}}" required />
+
+            <!--<input type="date" name="StartDate" ng-model="user.StartDate"  ng-pattern="/^[\+]?[(]?[0-12]{2}[)]?[-\s\.]?[0-31]{2}[-\s\.]?[2016-2030]{4}$/" required />-->
+            <div class="create-event" ng-show="createEvent.StartDate.$invalid && !createEvent.StartDate.$pristine">
+                <div ng-message="required">This field is required</div>
+                <div ng-message="pattern">Must enter a valid date</div>
+            </div>
+            <br />
+
+            <label>EndDate:</label>
+            <input type="date" name="EndDate" ng-model="user.EndDate" placeholder="yyyy-MM-dd" min="{{currentDate | date: 'yyyy-MM-dd'}}" required />
+            <div class="create-event" ng-show="createEvent.EndDate.$invalid && !createEvent.EndDate.$pristine">
+                <div ng-message="required">This field is required</div>
+                <div ng-message="pattern">Must enter a valid date</div>
+            </div>
+            <br />
+
+            <div id="StartTime" style="font-size:12pt;width:120%">
+                <label>StartTime:</label>
+                <select style="width: 10%" id="cboPlatform" name="startHour" class="select-field" ng-model="user.StartTime.hours" ng-options="x for x in StartTime.hours"> </select>
+                <select style="width: 10%" id="cboPlatform1" name="startMinute" class="select-field" ng-model="user.StartTime.minutes" ng-options="x for x in StartTime.minutes"> </select>
+                <select style="width: 10%" id="cboPlatform2" name="startMeridian" class="select-field" ng-model="user.StartTime.meridian" ng-options="x for x in StartTime.meridian">  </select>
+            </div>
+            <br />
+
+            <div id="EndTime" style="font-size:12pt;width:120%">
+                <label>EndTime:</label>
+                <select style="width: 10%" id="cboPlatform" name="endHour" class="select-field1" ng-model="user.EndTime.hours" ng-options="x for x in EndTime.hours"> </select>
+                <select style="width: 10%" id="cboPlatform1" name="endMinute" class="select-field2" ng-model="user.EndTime.minutes" ng-options="x for x in EndTime.minutes"> </select>
+                <select style="width: 10%" id="cboPlatform2" name="endMeridian" class="select-field3" ng-model="user.EndTime.meridian" ng-options="x for x in EndTime.meridian">  </select>
+            </div>
+            <br />
+
+
+            <label>Location:</label>
+            <textarea type="text" name="Location" class="create-event" rows="3" ng-model="user.Location" ng-minlength="05" ng-maxlength="50" required></textarea>
+            <div ng-show="createEvent.Location.$invalid && !createEvent.Location.$pristine">
+                <div ng-message="required">This field is required</div>
+                <div ng-message="minlength">Message must be over 05 characters</div>
+                <div ng-message="maxlength">Message must not exceed 50 characters</div>
+            </div>
+            <br />
+
+            <label>Description:</label>
+            <textarea type="text" name="Description" class="create-event" rows="5" ng-model="user.Description" ng-minlength="10" ng-maxlength="1000" required></textarea>
+            <div ng-show="createEvent.Description.$invalid && !createEvent.Description.$pristine">
+                <div ng-message="required">This field is required</div>
+                <div ng-message="minlength">Message must be over 10 characters</div>
+                <div ng-message="maxlength">Message must not exceed 1000 characters</div>
+            </div>
+            <br />
+
+            <label>Additional-Topic1:</label>
+            <input type="text" name="AdditionalTopic1" class="create-event" rows="3" ng-model="user.AdditionalTopic1" />
+            <br />
+
+            <label>Additional-Description1:</label>
+            <textarea type="text" name="AdditionalDescription1" class="create-event" rows="6" ng-model="user.AdditionalDescription1"></textarea>
+            <br />
+
+            <label>Additional-Topic2:</label>
+            <input type="text" name="AdditionalTopic2" class="create-event" rows="3" ng-model="user.AdditionalTopic2" />
+            <br />
+
+            <label>Additional-Description2:</label>
+            <textarea type="text" name="AdditionalDescription2" class="create-event" rows="6" ng-model="user.AdditionalDescription2"></textarea>
+            <br />
+
+            <button type="submit" class="btn btn-primary" input-align="middle" ng-disabled="createEvent.$invalid">  Create-Event </button>
+
+        </form>
+    </div>
+</div>
